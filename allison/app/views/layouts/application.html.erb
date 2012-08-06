@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agentchat</title>
+  <%= stylesheet_link_tag :all %>
+
+  <script src="http://ec2-50-18-239-138.us-west-1.compute.amazonaws.com:8080/application.js" type="text/javascript" charset="utf-8"></script>
+  <%= javascript_include_tag 'jquery', 'application' %>
+  <%= javascript_include_tag 'downloadify.min.js' %>
+  <%= javascript_include_tag 'swfobject.js' %>
+  <%= javascript_include_tag 'script.js' %>
+  <%= javascript_include_tag 'channel_controller.js' %>
+  
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
